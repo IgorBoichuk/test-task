@@ -1,0 +1,31 @@
+@import "../../scss/vars";
+
+.sectionwrapper {
+  height: 700px;
+}
+.sectioncontentwrapper {
+  width: 50%;
+}
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: $titleColor;
+}
+.titlemod {
+  border: 1px solid #1b1c57;
+}
+.herotext {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $colorDarkGrey;
+}
+.arrow {
+  width: 24px;
+  height: 24px;
+  
+}
+.bgimage {
+}

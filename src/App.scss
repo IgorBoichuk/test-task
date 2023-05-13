@@ -1,0 +1,19 @@
+@import "./scss/vars";
+@import "./scss/base";
+
+.App {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url(./galary/img/hero1.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
