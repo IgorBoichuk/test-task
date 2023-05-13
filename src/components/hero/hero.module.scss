@@ -22,10 +22,53 @@
   line-height: 28px;
   color: $colorDarkGrey;
 }
+.form {
+  position: relative;
+}
+.input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17px 24px 17px 24px;
+  gap: 16px;
+  min-width: 496px;
+
+  background: #ffffff;
+  border: 1px solid #e0e3eb;
+  border-radius: 32px;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: $colorDarkGrey;
+}
+.searchebutton {
+  position: absolute;
+  top: 4px;
+  right: 108px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 4px;
+  height: 50px;
+  background: $green;
+  border: none;
+  border-radius: 32px;
+}
+.buttontext {
+  padding: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: $white;
+}
 .arrow {
   width: 24px;
-  height: 24px;
-  
+  height: 15px;
+  fill: red;
 }
 .bgimage {
 }

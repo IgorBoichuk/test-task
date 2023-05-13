@@ -1,4 +1,5 @@
-import Icon from "../icons/icons";
+import React from "react";
+import { ReactComponent as Arrow } from "../../galary/svg/for-sprite/arrow.svg";
 import style from "./hero.module.scss";
 
 const Hero = () => {
@@ -15,9 +16,9 @@ const Hero = () => {
         </p>
         <form action="submit" className={style.form}>
           <input type="text" className={style.input} />
-          <button type="button" className={style.button}>
+          <button type="button" className={style.searchebutton}>
             <span className={style.buttontext}>Search</span>
-            <Icon name="arrow" color="red" />
+            <Arrow className={style.arrow} />
           </button>
         </form>
       </div>
