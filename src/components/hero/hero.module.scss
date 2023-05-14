@@ -1,48 +1,64 @@
 @import "../../scss/vars";
 
 .sectionwrapper {
-  height: 700px;
+  // height: 700px;
+  padding-top: 96px;
 }
 .sectioncontentwrapper {
   width: 50%;
 }
 .title {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 50px;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 1.2;
   text-transform: capitalize;
   color: $titleColor;
+  margin: 0;
 }
 .titlemod {
-  border: 1px solid #1b1c57;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
 }
+
 .herotext {
   font-weight: 400;
   font-size: 16px;
-  line-height: 28px;
-  color: $colorDarkGrey;
+  line-height: 1.2;
+  color: $textColor;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .form {
   position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../galary/svg/for-sprite/location.svg");
+    bottom: 50%;
+    translate: 70% 50%;
+  }
 }
 .input {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 17px 24px 17px 24px;
+  padding: 17px 24px 17px 50px;
   gap: 16px;
-  min-width: 496px;
-
+  width: 496px;
   background: #ffffff;
   border: 1px solid #e0e3eb;
   border-radius: 32px;
   outline: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.5;
   color: $colorDarkGrey;
 }
+
 .searchebutton {
   position: absolute;
   top: 4px;
@@ -62,13 +78,54 @@
   padding: 5px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.5;
   color: $white;
 }
 .arrow {
+  display: block;
   width: 24px;
   height: 15px;
-  fill: red;
+  
 }
+
+.listtitle {
+  padding-top: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $textColor;
+}
+
+.partnerslist {
+  display: flex;
+  gap: 32px;
+}
+
+.partnersitem {
+  display: block;
+  width: 85px;
+  height: 65px;
+}
+
+.travelochka {
+  background-image: url("../../galary/img/traveloka.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tiketcom {
+  background-image: url("../../galary/img/tiketcom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.airbnb {
+  background-image: url("../../galary/img/airbnb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tripedvisor {
+  background-image: url("../../galary/img/tripedvisor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .bgimage {
 }

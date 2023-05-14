@@ -1,8 +1,14 @@
 @import "./scss/vars";
 @import "./scss/base";
 
+.background {
+  background-image: radial-gradient(circle at center, #82ffd2 5%, white 45%);
+  background-position: -500px -500px;
+  background-repeat: no-repeat;
+}
+
 .App {
-  width: 1440px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 
@@ -13,7 +19,7 @@
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }

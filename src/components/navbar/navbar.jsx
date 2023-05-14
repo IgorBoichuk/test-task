@@ -1,12 +1,12 @@
+import React from "react";
+import { ReactComponent as Logo } from "../../galary/svg/for-sprite/logo.svg";
 import style from "./navbar.module.scss";
 
 const Navbar = () => {
   return (
     <nav className={style.navbar}>
       <a href="/" className={style.logolink}>
-        <svg className={style.logo}>
-          <use href="../../galary/svg/symbol-defs.svg#logo"></use>
-        </svg>
+        <Logo></Logo>
       </a>
       <ul className={style.navlist}>
         <li className={style.navitem}>About Us</li>

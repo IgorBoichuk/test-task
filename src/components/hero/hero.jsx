@@ -21,6 +21,13 @@ const Hero = () => {
             <Arrow className={style.arrow} />
           </button>
         </form>
+        <p className={style.listtitle}>Our Partnership</p>
+        <ul className={style.partnerslist}>
+          <li className={`${style.partnersitem} ${style.travelochka}`}></li>
+          <li className={`${style.partnersitem} ${style.tiketcom}`}></li>
+          <li className={`${style.partnersitem} ${style.airbnb}`}></li>
+          <li className={`${style.partnersitem} ${style.tripedvisor}`}></li>
+        </ul>
       </div>
       <div className={style.bgimage}></div>
     </div>

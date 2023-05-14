@@ -36,6 +36,10 @@
   border-radius: 32px;
   background: rgba(255, 255, 255, 0.1);
   color: $white;
+  &:hover {
+    background-color: $hovercolor;
+    color: $colorDarkGrey;
+  }
 }
 
 .navarrow {
@@ -55,6 +59,10 @@
   line-height: 22px;
   padding: 12px 24px;
   color: #047857;
-  background: #d1fae5;
+  background: $hovercolor;
   border-radius: 32px;
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
 }
