@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Arrow } from "../../galary/svg/for-sprite/arrow.svg";
+import { ReactComponent as Arrow } from "../../galary/svg/arrow.svg";
 import style from "./hero.module.scss";
 
 const Hero = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Logo } from "../../galary/svg/for-sprite/logo.svg";
+import { ReactComponent as Logo } from "../../galary/svg/logo.svg";
 import style from "./navbar.module.scss";
 
 const Navbar = () => {

@@ -1,15 +1,86 @@
 @import "../../scss/vars";
 
-.sectionname {
-  position: relative;
-  color: $orange;
-  &::before {
-    content: "";
-    display: block;
-    border: 1px solid $orange;
-    position: absolute;
-    width: 32px;
-    top: 50%;
-    left: -50px;
+.sectionwrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footerleft {
+  width: 320px;
+}
+
+.footertext {
+  font-size: 14px;
+  line-height: 24px;
+  color: $textColor;
+}
+
+.sociallist {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.sociallink {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    border-radius: 50%;
+    background-color: rgb(50, 169, 50);
+    fill: $white;
+    cursor: pointer;
   }
+}
+
+.icon * {
+  width: 40px;
+  height: 40px;
+  fill: $colorDarkGrey;
+  &:hover {
+    fill: $white;
+    cursor: pointer;
+  }
+}
+
+.sociallink:hover .icon * {
+  fill: $white;
+}
+
+.footerright {
+  display: flex;
+  gap: 80px;
+}
+
+.footerlist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.footerlink {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: $textColor;
+}
+
+.footerlistname {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: $titleColor;
 }
