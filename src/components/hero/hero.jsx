@@ -16,7 +16,7 @@ const Hero = () => {
         </p>
         <form action="submit" className={style.form}>
           <input type="text" className={style.input} />
-          <button type="button" className={style.searchebutton}>
+          <button type="submit" className={style.searchebutton}>
             <span className={style.buttontext}>Search</span>
             <Arrow className={style.arrow} />
           </button>

@@ -1,0 +1,139 @@
+@import "../../scss/vars";
+
+.sectionname {
+  position: relative;
+  color: $orange;
+  &::before {
+    content: "";
+    display: block;
+    border: 1px solid $orange;
+    position: absolute;
+    width: 32px;
+    top: 50%;
+    left: -50px;
+  }
+}
+
+.section {
+}
+
+.sectiotitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: $titleColor;
+  display: block;
+  width: 450px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: $colorDarkGrey;
+  padding: 12px 16px;
+  height: 50px;
+  background-color: $hovercolor;
+  border: 1px solid $colorWhiteGrey;
+  border-radius: 32px;
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+.sectionwrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.articlelist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.articleitem {
+  display: flex;
+  gap: 30px;
+  width: 570px;
+}
+
+.articleimgwrapper {
+  width: 200px;
+  height: 145px;
+}
+
+.articleimg {
+  width: 100%;
+  height: 80%;
+  display: block;
+  border-radius: 16px;
+}
+
+.sellerwrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sellerPhoto {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.articleselname {
+  font-size: 14px;
+  line-height: 22px;
+  color: $colorDarkGrey;
+  margin: 0;
+}
+
+.articletitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: $titleColor;
+  margin: 0;
+}
+
+.articledate {
+  font-size: 14px;
+  line-height: 24px;
+  color: $textColor;
+}
+
+.rightarticleimgwrapper {
+  width: 560px;
+  height: 280px;
+}
+
+.reihtarticleimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.rightarticletitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: $titleColor;
+  margin: 0;
+}
+
+.rightarticltext {
+  font-size: 14px;
+  line-height: 24px;
+  color: $colorDarkGrey;
+  opacity: 0.75;
+}

@@ -7,6 +7,7 @@
 .sectioncontentwrapper {
   width: 50%;
 }
+
 .title {
   font-weight: 800;
   font-size: 60px;
@@ -73,19 +74,18 @@
   background: $green;
   border: none;
   border-radius: 32px;
+  color: $white;
 }
 .buttontext {
   padding: 5px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
-  color: $white;
 }
 .arrow {
   display: block;
   width: 24px;
   height: 15px;
-  
 }
 
 .listtitle {

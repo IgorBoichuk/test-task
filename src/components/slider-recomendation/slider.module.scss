@@ -1,0 +1,69 @@
+@import "../../scss/vars";
+
+.cardlist {
+  display: flex;
+  gap: 20px;
+  // flex-direction: row;
+}
+
+.carditem {
+  // border: 1px solid black;
+  border-radius: 20px;
+  margin: 20px;
+  width: 340px;
+  &:hover {
+    box-shadow: rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+}
+.cardimagewrapper {
+  width: 340px;
+  height: 380px;
+}
+.cardimage {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.cardtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: $titleColor;
+}
+
+.cardprice {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: $colorDarkGrey;
+}
+
+.sellerwrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+style.sellerinfowrapper {
+}
+.sellerPhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.cardsellername {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.cardlocation {
+  color: $textColor;
+  margin: 0;
+}

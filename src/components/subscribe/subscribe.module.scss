@@ -1,15 +1,88 @@
 @import "../../scss/vars";
 
-.sectionname {
+.sectionwrapper {
+  margin-top: 94px;
+  width: 1200px;
+  height: 312px;
+  background-repeat: no-repeat;
+  background-image: url(./bg-images/bg-img8.png), url(./bg-images/bg-img7.png),
+    url(./bg-images/bg-img6.png), url(./bg-images/bg-img5.png),
+    url(./bg-images/bg-img4.png), url(./bg-images/bg-img3.png),
+    url(./bg-images/bg-img2.png), url(./bg-images/bg-image1.png),
+    url(./bg-images/bg-image.png);
+
+  background-position:  top 190px right 70px, top 80px right 50px,
+    top 120px right 170px, top 44px right 200px, top 178px left 195px,
+    top 50px left 170px, top 160px left 40px, top 38px left 44px, center;
+}
+
+.sectiontitle {
+  width: 430px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: $titleColor;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.form {
   position: relative;
-  color: $orange;
-  &::before {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 180px;
+  &::after {
+    position: absolute;
     content: "";
     display: block;
-    border: 1px solid $orange;
-    position: absolute;
-    width: 32px;
-    top: 50%;
-    left: -50px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../galary/svg/for-sprite/email.svg");
+    bottom: 50%;
+    translate: 50% 50%;
   }
+}
+
+.input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17px 24px 17px 50px;
+  gap: 16px;
+  width: 496px;
+  background: #ffffff;
+  border: 1px solid #e0e3eb;
+  border-radius: 32px;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $colorDarkGrey;
+}
+
+.button {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 4px;
+  height: 50px;
+  background: $green;
+  border: none;
+  border-radius: 32px;
+  color: $white;
+}
+.buttontext {
+  padding: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
 }

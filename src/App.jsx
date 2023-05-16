@@ -1,5 +1,5 @@
 import "./App.scss";
-import FindMore from "./components/fin-more/FindMore";
+import FindMore from "./components/find-more/FindMore";
 import Footer from "./components/footer/footer";
 import Hero from "./components/hero/hero";
 import Navbar from "./components/navbar/navbar";

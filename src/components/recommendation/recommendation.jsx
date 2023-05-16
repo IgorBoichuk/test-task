@@ -3,7 +3,9 @@ import { ReactComponent as House } from "../../galary/svg/for-sprite/house.svg";
 import { ReactComponent as Villa } from "../../galary/svg/for-sprite/villa.svg";
 import { ReactComponent as Apartment } from "../../galary/svg/for-sprite/apartment.svg";
 import { ReactComponent as Arrow } from "../../galary/svg/for-sprite/arrow.svg";
+
 import style from "./recommendation.module.scss";
+import AutoPlay from "../slider-recomendation/slider";
 
 const Recommendation = () => {
   return (
@@ -24,13 +26,22 @@ const Recommendation = () => {
             </button>{" "}
           </li>
           <li className={style.filteritem}>
-            <button className={style.filterbutton}><Apartment /> Apartment</button>{" "}
+            <button className={style.filterbutton}>
+              <Apartment /> Apartment
+            </button>{" "}
           </li>
         </ul>
         <ul className={style.controls}>
-            <li className={style.controlbutton}><Arrow className={style.leftarrow}/></li>
-            <li className={style.controlbutton}><Arrow  className={style.rightarrow}/></li>
+          <li className={style.controlbutton}>
+            <Arrow className={style.leftarrow} />
+          </li>
+          <li className={style.controlbutton}>
+            <Arrow className={style.rightarrow} />
+          </li>
         </ul>
+      </div>
+      <div className={style.slider}>
+        <AutoPlay />
       </div>
     </div>
   );
