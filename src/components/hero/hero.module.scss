@@ -31,16 +31,16 @@
 }
 .form {
   position: relative;
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-image: url("../../galary/svg/location.svg");
-    bottom: 50%;
-    translate: 70% 50%;
-  }
+}
+
+.location {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+  width: 24px;
+  height: 24px;
+  fill: $orange;
 }
 .input {
   box-sizing: border-box;
@@ -75,6 +75,7 @@
   border: none;
   border-radius: 32px;
   color: $white;
+  cursor: pointer;
 }
 .buttontext {
   padding: 5px;
@@ -98,12 +99,14 @@
 .partnerslist {
   display: flex;
   gap: 32px;
+  list-style: none;
 }
 
 .partnersitem {
   display: block;
+  font-size: 0;
   width: 85px;
-  height: 65px;
+  height: 30px;
 }
 
 .travelochka {
