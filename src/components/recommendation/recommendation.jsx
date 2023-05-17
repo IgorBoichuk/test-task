@@ -4,8 +4,8 @@ import { ReactComponent as Villa } from "../../galary/svg/villa.svg";
 import { ReactComponent as Apartment } from "../../galary/svg/apartment.svg";
 import { ReactComponent as Arrow } from "../../galary/svg/arrow.svg";
 
+import Slider from "../slider-recomendation/slider";
 import style from "./recommendation.module.scss";
-import AutoPlay from "../slider-recomendation/slider";
 
 const Recommendation = () => {
   return (
@@ -16,18 +16,18 @@ const Recommendation = () => {
         <ul className={style.filterlist}>
           <li className={style.filteritem}>
             <button className={style.filterbutton}>
-              <House /> House
+              <House className={style.buttonicon} /> House
             </button>{" "}
           </li>
           <li className={style.filteritem}>
             <button className={style.filterbutton}>
-              <Villa />
+              <Villa className={style.buttonicon} />
               Villa
             </button>{" "}
           </li>
           <li className={style.filteritem}>
             <button className={style.filterbutton}>
-              <Apartment /> Apartment
+              <Apartment className={style.buttonicon} /> Apartment
             </button>{" "}
           </li>
         </ul>
@@ -41,7 +41,7 @@ const Recommendation = () => {
         </ul>
       </div>
       <div className={style.slider}>
-        <AutoPlay />
+        <Slider />
       </div>
     </div>
   );

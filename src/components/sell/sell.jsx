@@ -1,5 +1,8 @@
 import React from "react";
-
+import { ReactComponent as Bath } from "../../galary/svg/bath.svg";
+import { ReactComponent as Bed } from "../../galary/svg/bed.svg";
+import { ReactComponent as Car } from "../../galary/svg/car.svg";
+import { ReactComponent as Stairs } from "../../galary/svg/stairs.svg";
 import style from "./sell.module.scss";
 
 const Sell = () => {
@@ -12,11 +15,19 @@ const Sell = () => {
         home of your dreams!
       </p>
       <p>House Detail</p>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
+      <ul className={style.iconlist}>
+        <li>
+          <Bed className={style.icon} />
+        </li>
+        <li>
+          <Bath className={style.icon} />
+        </li>
+        <li>
+          <Car className={style.icon} />
+        </li>
+        <li>
+          <Stairs className={style.icon} />
+        </li>
       </ul>
       <div>
         <p></p>

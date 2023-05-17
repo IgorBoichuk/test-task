@@ -30,6 +30,7 @@
 
 .navitem {
   display: flex;
+  gap: 15px;
   align-items: center;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -45,10 +46,13 @@
 .navarrow {
   display: block;
   padding: 5px;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(90deg);
+}
 
-  fill: #000000;
+.navitem:hover .navarrow * {
+  fill: $green;
 }
 
 .signup {

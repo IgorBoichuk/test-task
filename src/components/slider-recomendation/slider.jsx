@@ -1,21 +1,22 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "./slick.css";
+import "./slick-theme.css";
 
 import { featuredHouses } from "../../data/data";
 import style from "./slider.module.scss";
 
 const AutoPlay = () => {
+  // this.next = this.next.bind(this);
+  //   this.previous = this.previous.bind(this);
+
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
     speed: 500,
-    autoplaySpeed: 2500,
-    cssEase: "linear",
+    slidesToShow: 3.05,
+    slidesToScroll: 1,
+    arrows: true,
     // responsive: [
     //   {
     //     breakpoint: 1024,

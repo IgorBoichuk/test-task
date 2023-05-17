@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../galary/svg/logo.svg";
+import { ReactComponent as Arrow } from "../../galary/svg/arrow.svg";
 import style from "./navbar.module.scss";
 
 const Navbar = () => {
@@ -13,9 +14,7 @@ const Navbar = () => {
         <li className={style.navitem}>Article</li>
         <li className={style.navitem}>
           Property
-          <svg className={style.navarrow}>
-            <use href="../../galary/svg/symbol-defs.svg#arrow"></use>
-          </svg>
+          <Arrow className={style.navarrow} />
         </li>
       </ul>
       <div className={style.signup}>
