@@ -4,7 +4,7 @@ import { ReactComponent as Villa } from "../../galary/svg/villa.svg";
 import { ReactComponent as Apartment } from "../../galary/svg/apartment.svg";
 import { ReactComponent as Arrow } from "../../galary/svg/arrow.svg";
 
-import Slider from "../slider-recomendation/slider";
+import AutoPlay from "../slider-recomendation/slider";
 import style from "./recommendation.module.scss";
 
 const Recommendation = () => {
@@ -41,7 +41,7 @@ const Recommendation = () => {
         </ul>
       </div>
       <div className={style.slider}>
-        <Slider />
+        <AutoPlay />
       </div>
     </div>
   );

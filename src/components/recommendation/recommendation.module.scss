@@ -7,6 +7,7 @@
 .sectionname {
   position: relative;
   color: $orange;
+
   &::before {
     content: "";
     display: block;

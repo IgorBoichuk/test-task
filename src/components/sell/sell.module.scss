@@ -1,5 +1,9 @@
 @import "../../scss/vars";
 
+.sectionwrapper {
+  padding-top: 96px;
+}
+
 .sectionname {
   position: relative;
   color: $orange;
@@ -14,12 +18,36 @@
   }
 }
 
-.iconlist {
-  list-style: none;
-  display: grid;
+.detailstitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: $titleColor;
 }
 
-.icon {
+.detailstext {
+  color: $textColor;
+}
+
+.detailswrapper {
+  max-width: 440px;
+  color: $colorDarkGrey;
+}
+
+.detailslist {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.detailsitem {
+  display: flex;
+  align-items: center;
+}
+
+.detailsicon {
   width: 24px;
   height: 24px;
   fill: $colorDarkGrey;

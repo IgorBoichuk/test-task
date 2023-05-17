@@ -9,26 +9,32 @@ const Sell = () => {
   return (
     <div className={style.sectionwrapper}>
       <p className={style.sectionname}>Ready to Sell!</p>
-      <h2>Let’s tour and see our house!</h2>
-      <p>
+      <h2 className={style.detailstitle}>Let’s tour and see our house!</h2>
+      <p className={style.detailstext}>
         Houses recommended by our partners that have been curated to become the
         home of your dreams!
       </p>
-      <p>House Detail</p>
-      <ul className={style.iconlist}>
-        <li>
-          <Bed className={style.icon} />
-        </li>
-        <li>
-          <Bath className={style.icon} />
-        </li>
-        <li>
-          <Car className={style.icon} />
-        </li>
-        <li>
-          <Stairs className={style.icon} />
-        </li>
-      </ul>
+      <div className={style.detailswrapper}>
+        <p>House Detail</p>
+        <ul className={style.detailslist}>
+          <li className={style.detailsitem}>
+            <Bed className={style.detailsicon} />
+            <span>4 Bedrooms</span>
+          </li>
+          <li className={style.detailsitem}>
+            <Bath className={style.detailsicon} />
+            <span>1 Carport</span>
+          </li>
+          <li className={style.detailsitem}>
+            <Car className={style.detailsicon} />
+            <span>2 Bathrooms</span>
+          </li>
+          <li className={style.detailsitem}>
+            <Stairs className={style.detailsicon} />
+            <span>2 Floors</span>
+          </li>
+        </ul>
+      </div>
       <div>
         <p></p>
         <span></span>

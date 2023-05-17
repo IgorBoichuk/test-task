@@ -1,5 +1,9 @@
 @import "../../scss/vars";
 
+.sectionwrapper {
+  padding-top: 96px;
+}
+
 .sectionname {
   position: relative;
   color: $orange;
@@ -12,4 +16,13 @@
     top: 50%;
     left: -50px;
   }
+}
+
+.sectiotitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: $titleColor;
 }
