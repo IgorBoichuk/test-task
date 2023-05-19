@@ -1,4 +1,5 @@
 {
+  "homepage": "https://IgorBoichuk.github.io/test-task",
   "name": "test-task",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pades -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "svg-sprite-loader": "^6.0.11"
   }
 }
