@@ -1,11 +1,12 @@
 import Slider from "react-slick";
-import "./slick.css";
-import "./slick-theme.css";
+
+import "./slick-recomendation.css";
+import "./slick-recomendation-theme.css";
+import style from "./slider-recomendation.module.scss";
 
 import { featuredHouses } from "../../data/data";
-import style from "./slider.module.scss";
 
-const AutoPlay = () => {
+const SliderRec = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -13,6 +14,7 @@ const AutoPlay = () => {
     slidesToShow: 3.05,
     slidesToScroll: 1,
     arrows: true,
+
     // responsive: [
     //   {
     //     breakpoint: 1024,
@@ -64,4 +66,4 @@ const AutoPlay = () => {
   );
 };
 
-export default AutoPlay;
+export default SliderRec;
